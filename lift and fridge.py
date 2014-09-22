@@ -1,29 +1,29 @@
 #Tavonga Mudzana
-#....
+#22/09/14
 #exercise 6.5
 
 print("hello please enter the dimensions of the fridge and the lift")
 
-length1=float(input("please enter the length of the fridge: "))
-width1=float(input("please enter the width of the fridge: "))
-depth1=float(input("please enter the depth of the fridge: "))
-area1=(length1*length1)*depth1
-print("area for the fridge: {0}".format(area1))
-#this asks the user to input the dimensions of the fridge
-length2=float(input("please enter the length of lift: "))
-width2=float(input("please enter the width of the lift: "))
-depth2=float(input("please enter the depth of the lift: "))
+fridge_length=float(input("please enter the length of the fridge: "))
+fridge_width=float(input("please enter the width of the fridge: "))
+fridge_depth=float(input("please enter the depth of the fridge: "))
+fridge_area=(fridge_length*fridge_width)*fridge_depth
+print("area for the fridge: {0}".format(fridge_area))
+#this asks the user to input the dimensions of the fridge and prints the the area
 
-area2=(length2*length2)*depth2
-print("area for the lift {0}".format(area2))
+lift_length=float(input("please enter the length of lift: "))
+lift_width=float(input("please enter the width of the lift: "))
+lift_depth=float(input("please enter the depth of the lift: "))
+#this asks the user the dimensions of the lift 
+lift_area=(lift_length*lift_width)*lift_depth
 
-print(area1)
-print(area2)
+print("area for the lift: {0}".format(lift_area))
+print("area for fridge: {0}".format(fridge_area))
+#prints the area for the fridge and the lift
+answer=fridge_area-lift_area
 
-answer=area2-area1
-
-print("{0}-{1}".format(area2,area1))
+print("{0}-{1}".format(lift_area,fridge_area))
 print("answer:{0}".format(answer))
-
+#prints the 2 areas and then print the answers below
 
 
